@@ -45,7 +45,7 @@ section:last-of-type { border-bottom: none; }
 /* Zweispaltige Abschnitte */
 .split { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; align-items: start; min-width: 0; }
 .split figure { margin: 0; }
-.split img { border-radius: 4px; }
+.split img { border-radius: 4px; width: 100%; }
 figcaption { font-size: .85rem; color: var(--muted); margin-top: .5rem; }
 
 h2 { font-size: 1.1rem; margin-bottom: 1.5rem; }
@@ -92,11 +92,14 @@ footer details, .copy { max-width: 62rem; margin-left: auto; margin-right: auto;
   .hero { margin: 0 -3rem; padding: 5rem 3rem; }
   .hero-inner { grid-template-columns: minmax(0, 1fr) 14rem; }
   .hero-art { width: 14rem; justify-self: end; }
-  .split { grid-template-columns: 3fr 2fr; gap: 3rem; }
-  #archiv-teaser.split { grid-template-columns: 2fr 3fr; }
+  .split { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  #archiv-teaser.split { grid-template-columns: 1fr 1fr; }
   .theme { grid-template-columns: 8rem minmax(0, 1fr); gap: .5rem 2.5rem; padding: 3rem 0; }
   .theme-art { width: 8rem; height: 8rem; }
 }
 
 .entry-img { max-width: 22rem; border-radius: 4px; margin: 0 0 1.25rem; }
 @media (min-width: 48rem) { .entry-img { float: right; margin: 0 0 1rem 2rem; max-width: 18rem; } .entry::after { content: ""; display: block; clear: both; } }
+
+.jump { font-size: 1rem; }
+.jump a { color: #141414; }
